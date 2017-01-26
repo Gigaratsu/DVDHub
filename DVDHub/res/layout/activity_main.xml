@@ -1,0 +1,89 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="ben.dvdhub.MainActivity" >
+
+    <Button
+        android:id="@+id/listActButt"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/insertActButt"
+        android:layout_below="@+id/insertActButt"
+        android:layout_marginTop="10dp"
+        android:onClick="startAct"
+        android:text="List DVDs" />
+
+    <Button
+        android:id="@+id/viewActButt"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/listActButt"
+        android:layout_below="@+id/listActButt"
+        android:layout_marginTop="10dp"
+        android:onClick="startAct"
+        android:text="View a DVD" />
+
+    <Button
+        android:id="@+id/editActButt"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/viewActButt"
+        android:layout_below="@+id/viewActButt"
+        android:layout_marginTop="10dp"
+        android:onClick="startAct"
+        android:text="Edit a DVD" />
+
+    <Button
+        android:id="@+id/deleteActButt"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/editActButt"
+        android:layout_below="@+id/editActButt"
+        android:layout_marginTop="10dp"
+        android:onClick="startAct"
+        android:text="Delete a DVD" />
+
+    <Button
+        android:id="@+id/searchActButt"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/deleteActButt"
+        android:layout_below="@+id/deleteActButt"
+        android:layout_marginTop="10dp"
+        android:onClick="startAct"
+        android:text="Search for a DVD" />
+
+    <Button
+        android:id="@+id/insertActButt"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:onClick="startAct"
+        android:text="Insert a DVD" />
+
+    <Button
+        android:id="@+id/saveButt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/searchActButt"
+        android:layout_alignParentBottom="true"
+        android:onClick="disAbout"
+        android:text="About" />
+
+    <Button
+        android:id="@+id/cancelButt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/saveButt"
+        android:layout_alignBottom="@+id/saveButt"
+        android:layout_alignRight="@+id/searchActButt"
+        android:onClick="killDB"
+        android:text="Kill DB" />
+
+</RelativeLayout>
